@@ -1,13 +1,3 @@
 {
-<<<<<<< HEAD
-  "name": "git-commit-message-helper",
-  "devDependencies": {
-    "typescript": "^3.9.7"
-  },
-  "dependencies": {
-    "enquirer": "^2.3.6"
-  }
-=======
   "name": "git-commit-message-helper"
->>>>>>> parent of 3fd1592... chore(dev-deps): add typescript to devDependencies
 }
