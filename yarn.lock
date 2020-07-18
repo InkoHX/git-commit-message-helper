@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@types/abstract-leveldown@*":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@types/abstract-leveldown/-/abstract-leveldown-5.0.1.tgz#3c7750d0186b954c7f2d2f6acc8c3c7ba0c3412e"
+  integrity sha512-wYxU3kp5zItbxKmeRYCEplS2MW7DzyBnxPGj+GJVHZEUZiK/nn5Ei1sUFgURDh+X051+zsGe28iud3oHjrYWQQ==
+
+"@types/level-js@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/level-js/-/level-js-4.0.1.tgz#e094b684e546b80346b2cec0562c4216d8d29eeb"
+  integrity sha512-WA8Zt0RUYVWT1lhyHnT0okmMY1m5MjxC8PvpUn9ojZaU+KNsTy3A2KBHaKtjttCN+o1h7K/eQlSjM20bDraeHA==
+  dependencies:
+    "@types/abstract-leveldown" "*"
+
 "@types/node@^14.0.23":
   version "14.0.23"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.23.tgz#676fa0883450ed9da0bb24156213636290892806"
