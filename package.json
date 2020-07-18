@@ -1,3 +1,6 @@
 {
-  "name": "git-commit-message-helper"
+  "name": "git-commit-message-helper",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
 }
