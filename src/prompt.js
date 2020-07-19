@@ -21,24 +21,20 @@ const askAddChangedFiles = paths => prompt({
 })
 
 module.exports.askAddChangedFiles = async () => {
-  const { not_added, files } = await simpleGit.status()
-  const changedFiles = not_added
-  const stagedFiles = (await simpleGit.diffSummary(['--staged'])).files
-    .map(file => file.file)
-  const addedFiles = files
-    .map(file => file.path)
-    .filter(file => stagedFiles.includes(file))
+  const status = await simpleGit.status()
+  const stagedFiles = (await simpleGit.diffSummary(['--staged'])).files.map(file => file.file)
+  const changedFiles = status.not_added
 
-  if (!changedFiles.length && !addedFiles.length) throw new Error('No changed files.')
-  if (!changedFiles.length && addedFiles.length) return
+  if (!changedFiles.length && !stagedFiles.length) throw new Error('No changed files.')
+  if (!changedFiles.length && stagedFiles.length) return
 
-  if (changedFiles.length && !addedFiles.length) {
+  if (changedFiles.length && !stagedFiles.length) {
     const { files } = await askAddChangedFiles(changedFiles)
 
     return simpleGit.add(files)
   }
 
-  if (changedFiles.length && addedFiles.length) {
+  if (changedFiles.length && stagedFiles.length) {
     const { whetherAddFiles } = await prompt({
       type: 'confirm',
       name: 'whetherAddFiles',
