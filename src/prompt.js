@@ -17,7 +17,7 @@ const askAddChangedFiles = paths => prompt({
   name: 'files',
   message: 'Please select a file to add. (Multiple possible)',
   choices: paths,
-  required: true
+  validate: value => value.length ? true : 'Must choose at least one.'
 })
 
 module.exports.askAddChangedFiles = async () => {
