@@ -1,5 +1,6 @@
 {
   "name": "@inkohx/git-commit-message-helper",
+  "version": "0.0.1",
   "bin": {
     "git-commit-helper": "./src/index.js"
   },
