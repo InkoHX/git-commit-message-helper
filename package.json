@@ -1,6 +1,20 @@
 {
   "name": "@inkohx/git-commit-message-helper",
+  "license": "MIT",
   "version": "0.0.1",
+  "homepage": "https://github.com/InkoHX/git-commit-message-helper#readme",
+  "author": {
+    "name": "InkoHX",
+    "email": "inkohx@gmail.com",
+    "url": "https://inkohx.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InkoHX/git-commit-message-helper.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "bin": {
     "git-commit-helper": "./src/index.js"
   },
