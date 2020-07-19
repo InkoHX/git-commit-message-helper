@@ -1,5 +1,8 @@
 {
-  "name": "git-commit-message-helper",
+  "name": "@inkohx/git-commit-message-helper",
+  "bin": {
+    "git-commit-helper": "./src/index.js"
+  },
   "dependencies": {
     "enquirer": "^2.3.6",
     "simple-git": "^2.13.2"
