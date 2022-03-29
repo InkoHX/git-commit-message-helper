@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "enquirer": "^2.3.6",
-    "simple-git": "^2.30.0"
+    "simple-git": "^3.5.0"
   }
 }
